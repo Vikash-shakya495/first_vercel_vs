@@ -1,7 +1,7 @@
 const http = require('http');
 const fs  = require('fs');
 
-const PORT = 4000; // port 80 is bydefault
+const PORT = process.env.PORT; // port 80 is bydefault
 const hostname = "localhost";
 
 const home = fs.readFileSync('./index.html','utf-8');
